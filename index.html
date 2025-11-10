@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golam Rabbani - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="logo.png" alt="" / style="width: 13%;">GOLAM RABBANI
+          <style>
+            .logo {
+              font-size: 1.5rem;
+              font-weight: bold;
+              color: #133659;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          </style>
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 10%;
+        background: linear-gradient(120deg, --primary-color, --primary-color);
+      "
+    >
+      <div
+        class="hero-content"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          max-width: 1200px;
+          flex-wrap: wrap;
+        "
+      >
+        <!-- Left Text Section -->
+        <div class="hero-text" style="flex: 1; min-width: 300px">
+          <h1
+            class="hero-title"
+            style="font-size: 2.8rem; margin-bottom: 10px; color: #133659"
+          >
+            Golam Rabbani
+          </h1>
+          <p
+            class="hero-subtitle"
+            style="
+              font-size: 1.3rem;
+              color: --text-primary;
+              margin-bottom: 15px;
+            "
+          >
+            Bachelor of Science in Computer Science and Engineering
+          </p>
+          <p
+            class="hero-description"
+            style="
+              font-size: 1rem;
+              color: --text-secondary;
+              margin-bottom: 25px;
+              line-height: 1.6;
+            "
+          >
+            Passionate about Web Development,Data Science, Computer Vision, HCI,
+            and Cybersecurity. Building intelligent systems that are secure,
+            user-friendly, and efficient.
+          </p>
+
+          <div class="hero-buttons" style="margin-bottom: 20px">
+            <a
+              href="#projects"
+              class="btn btn-primary"
+              style="
+                text-decoration: none;
+                background: --gradient-1;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 6px;
+                margin-right: 10px;
+              "
+              >View Projects</a
+            >
+            <a
+              href="#contact"
+              class="btn btn-secondary"
+              style="
+                text-decoration: none;
+                background: --gradient-2;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 6px;
+              "
+              >Get in Touch</a
+            >
+          </div>
+
+          <div class="social-links" style="margin-top: 10px">
+            <a
+              href="https://github.com/GolamRabbani09"
+              target="_blank"
+              aria-label="GitHub"
+              style="color: #bfd0e0; margin-right: 10px; font-size: 1.5rem"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="mailto:golamrabbani000919@gmail.com"
+              aria-label="Email"
+              style="color: #cdd9e5; margin-right: 10px; font-size: 1.5rem"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="tel:01708000919"
+              aria-label="Phone"
+              style="color: #bcccdc; font-size: 1.5rem"
+            >
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Image Section -->
+        <div
+          class="hero-image"
+          style="
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <img
+            src="image.png"
+            style="
+              width: 450px;
+              height: 450px;
+              border-radius: 13%;
+              object-fit: cover;
+              border: 5px solid --gradient-1;
+
+              transition: transform 0.4s ease, box-shadow 0.4s ease;
+            "
+            onmouseover="this.style.transform='scale(1.05)';this.style.boxShadow='0 0 25px rgba(0,123,255,0.4)';"
+            onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 0 20px rgba(0,0,0,0.1)';"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>
+            I am a final-year Computer Science and Engineering student with a
+            strong interest in Web Development, Data Science, Data Mining,
+            Computer Vision and Pattern Recognition (CVPR), Human-Computer
+            Interaction (HCI), and Cybersecurity.
+          </p>
+          <p>
+            Along with these areas, I also have a solid understanding of Web
+            Technologies, which helps me bridge data-driven insights with
+            real-world applications.
+          </p>
+          <p>
+            I enjoy exploring how intelligent systems learn from data, how
+            people interact with technology, and how to make those systems
+            secure, user-friendly, and efficient. I'm eager to apply my skills,
+            keep learning, and contribute to projects that make technology
+            smarter and more human-centered.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-header">
+              <i class="fas fa-code"></i>
+              <h3>Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span>TypeScript</span>
+              <span>JavaScript</span>
+              <span>C</span>
+              <span>C++</span>
+              <span>C#</span>
+              <span>Java</span>
+              <span>PHP</span>
+              <span>Python</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <i class="fas fa-paint-brush"></i>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-tags">
+              <span>React</span>
+              <span>Tailwind CSS</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <i class="fas fa-server"></i>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Node.js</span>
+              <span>NestJS</span>
+              <span>REST APIs</span>
+              <span>JWT</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <i class="fas fa-database"></i>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-tags">
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span>MongoDB</span>
+              <span>MSSQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <i class="fas fa-book"></i>
+              <h3>Computer Science</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Data Structures</span>
+              <span>Algorithms</span>
+              <span>OOP</span>
+              <span>System Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-category">Data Science</div>
+            <h3>Cervical Cancer Risk Classification</h3>
+            <p class="project-tech">Random Forest, SMOTE, K-means</p>
+            <p class="project-desc">
+              Designed an interpretable framework using SMOTE and a
+              Cluster-Then-Classify approach to enhance recall and address class
+              imbalance in medical data.
+            </p>
+            <a
+              href="https://github.com/GolamRabbani09/DATA-WAREHOUSING-AND-DATA-MINING-"
+              target="_blank"
+              class="project-link"
+            >
+              View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-category">Computer Vision</div>
+            <h3>CVPR Analysis</h3>
+            <p class="project-tech">Jupyter Notebook, Python</p>
+            <p class="project-desc">
+              Exploratory project focused on core Computer Vision and Pattern
+              Recognition concepts.
+            </p>
+            <a
+              href="https://github.com/GolamRabbani09/CVPR"
+              target="_blank"
+              class="project-link"
+            >
+              View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-category">Graphics</div>
+            <h3>Village Scenario</h3>
+            <p class="project-tech">C++, OpenGL</p>
+            <p class="project-desc">
+              OpenGL-based visual simulation featuring a day-night cycle and
+              real-time cloud movement.
+            </p>
+            <a
+              href="https://github.com/GolamRabbani09/Village-Scenario"
+              target="_blank"
+              class="project-link"
+            >
+              View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-category">Hardware</div>
+            <h3>Traffic Control System</h3>
+            <p class="project-tech">Logic ICs, Digital Logic</p>
+            <p class="project-desc">
+              Designed and simulated a sequential logic circuit for a 4-way
+              traffic control system using timer and logic ICs.
+            </p>
+            <a
+              href="https://github.com/GolamRabbani09/Digital-Logic-And-Circuits"
+              target="_blank"
+              class="project-link"
+            >
+              View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-category">Web Development</div>
+            <h3>Form Submission Handler</h3>
+            <p class="project-tech">PHP, HTML/CSS</p>
+            <p class="project-desc">
+              Web feature designed to capture user data via forms and send
+              automated email notifications.
+            </p>
+            <a
+              href="https://github.com/GolamRabbani09/Form-Submit-to-Send-Email"
+              target="_blank"
+              class="project-link"
+            >
+              View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-category">Web Development</div>
+            <h3>File Downloading System</h3>
+            <p class="project-tech">PHP</p>
+            <p class="project-desc">
+              Server-side system engineered for managing and facilitating
+              efficient and secure file downloads.
+            </p>
+            <a
+              href="https://github.com/GolamRabbani09/Downloading-System-in-PHP"
+              target="_blank"
+              class="project-link"
+            >
+              View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <h2 class="section-title">Education & Achievements</h2>
+
+        <div class="education-cards">
+          <div class="education-card">
+            <h3>Bachelor of Science in Computer Science and Engineering</h3>
+            <p class="institution">
+              American International University - Bangladesh (AIUB)
+            </p>
+            <p class="year">Final Semester | Expected Graduation: 2026</p>
+          </div>
+
+          <div class="education-card">
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <p class="institution">Kalkini Syed Abul Hossain College</p>
+            <p class="year">Group: Science | Year: 2020</p>
+          </div>
+
+          <div class="education-card">
+            <h3>Secondary School Certificate (SSC)</h3>
+            <p class="institution">
+              Government Kalkini Pilot Model High School
+            </p>
+            <p class="year">Group: Science | Year: 2018</p>
+          </div>
+        </div>
+
+        <div class="achievements">
+          <div class="achievement-header">
+            <i class="fas fa-trophy"></i>
+            <h3>Achievements</h3>
+          </div>
+          <ul>
+            <li>
+              Participated in The 2025 ICPC Asia Dhaka Regional Site Online
+              Preliminary Round
+            </li>
+            <li>
+              Participated in Inter-College Sports Competitions (Badminton &
+              Chess)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-intro">
+          I'm always open to discussing new projects, creative ideas, or
+          opportunities to be part of your visions.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <a href="mailto:golamrabbani000919@gmail.com"
+              >golamrabbani000919@gmail.com</a
+            >
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <h4>Phone</h4>
+            <a href="tel:01708000919">01708000919</a>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Location</h4>
+            <p>Dhaka, Bangladesh</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Golam Rabbani. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
