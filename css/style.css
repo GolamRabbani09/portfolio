@@ -6,7 +6,7 @@
 }
 
 :root {
-  --primary-color: #2fd65c;
+  --primary-color: rgba(168, 85, 247, 0.2);
   --secondary-color: #021638;
   --dark-bg: #0f172a;
   --darker-bg: #020617;
